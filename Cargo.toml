@@ -1,0 +1,17 @@
+[package]
+name = "nerdhubraum"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0.136", features = ["derive"] }
+serde_json = "1.0.78"
+ureq = "2.4.0"
+tracing = { version = "0.1.30", features = ["log"] }
+pretty_env_logger = "0.4.0"
+warp = "0.3.2"
+sqlx = { version = "0.5.10", features = ["sqlite", "runtime-tokio-rustls"] }
+dotenv = "0.15.0"
