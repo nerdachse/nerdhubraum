@@ -15,3 +15,6 @@ pretty_env_logger = "0.4.0"
 warp = "0.3.2"
 sqlx = { version = "0.5.10", features = ["sqlite", "runtime-tokio-rustls"] }
 dotenv = "0.15.0"
+tokio-tungstenite = { version = "0.16", features = ["native-tls"] }
+futures-util = "0.3.21"
+tokio-stream = { version = "0.1.8", features = ["net"] }
